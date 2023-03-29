@@ -2,5 +2,55 @@
   <article>
     <h3>Interpolaçao</h3>
     <p>string renderizada com interpolaçao: {{ url }}</p>
+    <p>O resultado de 1 + 1 não é {{ 1 + 1 + getValor() }}</p>
+    <p>Gosto de angular? {{ cursoAngular && getCurtirCurso() }}</p>
   </article>
+
+  <div>
+    <select #classe (change)="(0)">
+      <option value="select">select</option>
+      <option value="red">red</option>
+      <option value="green">green</option>
+      <option value="blue">blue</option>
+    </select>
+
+    <div [class.red]="classe.value === 'red'">red</div>
+    <div [class.green]="classe.value === 'green'">green</div>
+    <div [class.blue]="classe.value === 'blue'">blue</div>
+  </div>
+  <br />
+  <div
+    [style.display]="classe.value === 'red' ? 'block' : 'none'"
+    [class]="'red'"
+  >
+    usando css inline
+  </div>
+  <article>
+    <h3>Property Binding</h3>
+    <p>3 formas de fazer</p>
+    <!-- <img src="{{ urlImage }}" /> -->
+    <!-- <img [src]="urlImage" /> -->
+    <!-- <img bind-src="urlImage" /> -->
+  </article>
+
+  <div>
+    <h3>Event binding</h3>
+    <button (click)="botaoClicado()">Me click</button>
+    <input
+      type="text"
+      (keyup)="onkeyUp($event)"
+      (keyup.enter)="salvarValor($event.target)"
+      (blur)="salvarValor($event.target)"
+    />
+    <p>Valor do input: {{ valorInput }}</p>
+    <p>Valor salto: {{ valorSalvo }}</p>
+
+    <br />
+    <span
+      (mouseover)="mouseOver()"
+      (mouseout)="mouseOver()"
+      [class.red]="isMouseOver"
+      >Passe o mouse sobre mim</span
+    >
+  </div>
 </section>
