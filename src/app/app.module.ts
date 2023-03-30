@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { CounterOutputComponent } from './counter-output/counter-output.component';
 import { CicloDeVidaComponent } from './ciclo-de-vida/ciclo-de-vida.component';
+import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CicloDeVidaComponent } from './ciclo-de-vida/ciclo-de-vida.component';
     InputPropertyComponent,
     CounterOutputComponent,
     CicloDeVidaComponent,
+    DiretivaNgifComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, CursosModule, FormsModule],
   providers: [],
