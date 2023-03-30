@@ -9,3 +9,15 @@
 <router-outlet></router-outlet>
 
 <app-data-binding></app-data-binding>
+
+<div>
+  <h3>Ciclos de vida</h3>
+  <app-ciclo-de-vida
+    [valorInicial]="valorInicial"
+    *ngIf="!deletarCiclo"
+  ></app-ciclo-de-vida>
+  <button (click)="mudarValor()">Mudar valor</button>
+  <br />
+  <button (click)="deletar()">Deletar ciclo</button>
+  <button (click)="restaurar()">Restaurar ciclo</button>
+</div>

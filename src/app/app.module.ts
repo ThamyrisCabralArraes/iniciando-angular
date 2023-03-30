@@ -10,6 +10,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { CounterOutputComponent } from './counter-output/counter-output.component';
+import { CicloDeVidaComponent } from './ciclo-de-vida/ciclo-de-vida.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { CounterOutputComponent } from './counter-output/counter-output.componen
     DataBindingComponent,
     InputPropertyComponent,
     CounterOutputComponent,
+    CicloDeVidaComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, CursosModule, FormsModule],
   providers: [],
