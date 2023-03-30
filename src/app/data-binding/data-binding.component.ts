@@ -15,6 +15,24 @@ export class DataBindingComponent {
 
   isMouseOver: boolean = false;
 
+  nome: string = 'abc';
+
+  pessoa: { nome: string; idade: number } = {
+    nome: 'def',
+    idade: 34,
+  };
+
+  nomeDoCurso = 'Angular';
+
+  valor = 0;
+
+  inputValue = 0;
+
+  onMudouValor(event: any) {
+    console.log(event.novoValor);
+    this.inputValue = event.novoValor;
+  }
+
   getValor() {
     return 1;
   }

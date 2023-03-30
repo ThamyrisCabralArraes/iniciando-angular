@@ -32,9 +32,11 @@
     <!-- <img [src]="urlImage" /> -->
     <!-- <img bind-src="urlImage" /> -->
   </article>
+</section>
 
+<section>
+  <h3>Event binding</h3>
   <div>
-    <h3>Event binding</h3>
     <button (click)="botaoClicado()">Me click</button>
     <input
       type="text"
@@ -44,7 +46,6 @@
     />
     <p>Valor do input: {{ valorInput }}</p>
     <p>Valor salto: {{ valorSalvo }}</p>
-
     <br />
     <span
       (mouseover)="mouseOver()"
@@ -53,4 +54,35 @@
       >Passe o mouse sobre mim</span
     >
   </div>
+</section>
+
+<section>
+  <h3>Two-way data-binding</h3>
+
+  <div>
+    <input type="text" [(ngModel)]="nome" />
+    <p>{{ nome }}</p>
+  </div>
+
+  <div>
+    <input type="text" [(ngModel)]="pessoa.nome" />
+    <input type="text" [(ngModel)]="pessoa.idade" />
+
+    <p>meu nome é {{ pessoa.nome }} e minha idade é {{ pessoa.idade }}</p>
+  </div>
+</section>
+
+<section>
+  <h3>Input/Output Properties</h3>
+  <app-curso [nomeDoCurso]="nomeDoCurso"></app-curso>
+</section>
+
+<section>
+  <h3>Counter</h3>
+  <app-counter-output
+    [valor]="valor"
+    (mudouValor)="onMudouValor($event)"
+  ></app-counter-output>
+
+  <p>O valor do input é {{ inputValue }}</p>
 </section>
