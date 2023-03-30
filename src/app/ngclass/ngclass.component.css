@@ -1,0 +1,19 @@
+* {
+  color: white;
+}
+
+.favorite {
+  border: 1px solid black;
+  width: 20px;
+  background-color: brown;
+  color: brown;
+}
+
+.notFavorite {
+  border: 1px solid black;
+  width: 20px;
+}
+
+.colorBlack {
+  color: black;
+}

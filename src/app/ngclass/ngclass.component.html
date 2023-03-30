@@ -1,0 +1,21 @@
+<div>
+  <h3 class="colorBlack">diretiva class</h3>
+  <span class="colorBlack">click para favorito</span>
+  <p
+    [class.favorite]="isFavorite"
+    [class.notFavorite]="!isFavorite"
+    (click)="favorite()"
+  >
+    .
+  </p>
+  <!-- outra maneira de fazer - masi indicada -->
+  <p
+    [ngClass]="{
+      favorite: isFavorite,
+      notFavorite: !isFavorite
+    }"
+    (click)="favorite()"
+  >
+    .
+  </p>
+</div>

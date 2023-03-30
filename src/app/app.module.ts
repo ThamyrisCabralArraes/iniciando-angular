@@ -14,6 +14,7 @@ import { CicloDeVidaComponent } from './ciclo-de-vida/ciclo-de-vida.component';
 import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
 import { DiretivaSwitchComponent } from './diretiva-switch/diretiva-switch.component';
 import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.component';
+import { NgclassComponent } from './ngclass/ngclass.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.componen
     DiretivaNgifComponent,
     DiretivaSwitchComponent,
     DiretivaNgforComponent,
+    NgclassComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, CursosModule, FormsModule],
   providers: [],
