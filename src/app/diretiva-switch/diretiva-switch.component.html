@@ -1,0 +1,29 @@
+<nav>
+  <div>
+    <a class="links" [class.active]="aba === 'HOME'" (click)="aba = 'HOME'"
+      >HOME</a
+    >
+    <a
+      class="links"
+      [class.active]="aba === 'FEATURES'"
+      (click)="aba = 'FEATURES'"
+      >FEATURES</a
+    >
+    <a
+      class="links"
+      [class.active]="aba === 'PRICING'"
+      (click)="aba = 'PRICING'"
+      >PRICING</a
+    >
+    <a class="links" [class.active]="aba === 'ABOUT'" (click)="aba = 'ABOUT'"
+      >ABOUT</a
+    >
+  </div>
+</nav>
+
+<div [ngSwitch]="aba">
+  <p *ngSwitchDefault>Aba home clicada</p>
+  <p *ngSwitchCase="'FEATURES'">Aba features clicado</p>
+  <p *ngSwitchCase="'PRICING'">aba princing clicado</p>
+  <p *ngSwitchCase="'ABOUT'">aba about clicado</p>
+</div>

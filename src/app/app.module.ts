@@ -12,6 +12,8 @@ import { InputPropertyComponent } from './input-property/input-property.componen
 import { CounterOutputComponent } from './counter-output/counter-output.component';
 import { CicloDeVidaComponent } from './ciclo-de-vida/ciclo-de-vida.component';
 import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
+import { DiretivaSwitchComponent } from './diretiva-switch/diretiva-switch.component';
+import { DiretivaNgforComponent } from './diretiva-ngfor/diretiva-ngfor.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { DiretivaNgifComponent } from './diretiva-ngif/diretiva-ngif.component';
     CounterOutputComponent,
     CicloDeVidaComponent,
     DiretivaNgifComponent,
+    DiretivaSwitchComponent,
+    DiretivaNgforComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, CursosModule, FormsModule],
   providers: [],

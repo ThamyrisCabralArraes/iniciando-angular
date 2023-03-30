@@ -1,0 +1,12 @@
+.links {
+  margin: 5px;
+  color: rgba(0, 0, 0, 0.443);
+}
+
+.links:hover {
+  color: black;
+}
+
+.active:active {
+  color: black;
+}
