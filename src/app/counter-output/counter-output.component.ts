@@ -1,4 +1,10 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+  ViewChild,
+} from '@angular/core';
 
 @Component({
   selector: 'app-counter-output',
@@ -10,7 +16,10 @@ export class CounterOutputComponent {
 
   @Output() mudouValor = new EventEmitter();
 
+  @ViewChild('campoInput') campoValorInput: any;
+
   incrementa() {
+    console.log(this.campoValorInput.nativeElement.value);
     this.valor += 1;
     this.mudouValor.emit({ novoValor: this.valor });
   }
@@ -20,5 +29,5 @@ export class CounterOutputComponent {
     this.mudouValor.emit({ novoValor: this.valor });
   }
 
-  constructor() {}
+  // constructor() {}
 }

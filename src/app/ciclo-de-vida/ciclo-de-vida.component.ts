@@ -26,33 +26,32 @@ export class CicloDeVidaComponent
   @Input() valorInicial = 10;
 
   constructor() {
-    console.log(this.constructor);
+    // console.log(this.constructor);
   }
 
   ngOnChanges() {
-    console.log('ngOnChanges');
-
+    // console.log('ngOnChanges');
     //se tiver Input prop é melhor usar OnChanges
   }
 
   ngDoCheck() {
-    console.log('ngDoCheck');
+    // console.log('ngDoCheck');
   }
 
   ngAfterViewInit() {
-    console.log('ngAfterViewInit');
+    // console.log('ngAfterViewInit');
   }
 
   ngAfterViewChecked() {
-    console.log('ngAfterViewChecked');
+    // console.log('ngAfterViewChecked');
   }
 
   ngOnDestroy() {
-    console.log('ngOnDestroy');
+    // console.log('ngOnDestroy');
   }
 
   private log(hook: string) {
-    console.log(hook);
+    // console.log(hook);
   }
   ngOnInit() {}
 }
